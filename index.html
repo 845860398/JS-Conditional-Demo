@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="html" lang="en-US">
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Document</title>
+	<style>
+		.image01 {
+		  width: 480px;
+		  height: 350px;
+		  display: flex;
+		  margin-left: auto;
+		  margin-right: auto;
+		  padding-top: 4%; }
+
+		body{
+		  background: gray; 
+		}
+
+		.home_title{
+		  text-align: center;
+		  color: #FFFFFF; 
+		}
+
+		.home_title{
+		  font-size: 60px; 
+		}
+
+		.home-paragrpah{
+			color: #D00DB4; 
+		}
+
+		.wrapper1{
+			margin-left: auto;
+			margin-top: 5%;
+			display: inline-block;
+		}
+
+		.wrapper2{
+			margin-left: auto;
+			margin-top: 5%;
+			display: inline-block;
+			padding-left: 3%;
+		}
+
+		.box1{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+		}
+
+		.box2{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		}
+
+		.box3{
+			width: 100px;
+			height: 100px;
+			background-color: blue
+		}
+
+		.box4{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+
+<div id="container">
+
+	<div class="home_container">
+		<div class="home-titles">
+			<h1 class="home_title">IamOther</h1>
+		</div>
+		<div class="wrapper" align="center">
+			<div class="wrapper1">
+				<div class="row">
+					<div class="col-sm-6 box1"></div>
+					<div class="col-sm-6 box2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 box3"></div>
+					<div class="col-sm-6 box4"></div>
+				</div>
+<!-- 		<div>
+			<input id="myInput" type="text" value="Tutti Frutti">
+				<button onclick="checkFruit()">Check Fruit</button>
+			<p id="demo" class="ptag"></p>
+		</div> -->
+			<input id="songs" type="text">
+				<button onclick="music()">Search</button>
+			<p id="daAlbums"></p>
+
+</div>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script>
+	$(document).ready(function(){
+
+		// switch (new Date().getDay()) {
+		// 	case 6:
+		// 		text = "Today is Saturday";
+		// 		break;
+		// 	case 0:
+		// 		text = "Today is Sunny";
+		// 		break;
+		// 	default:
+		// 		text = "Looking forward to the Weekend";
+		// }
+
+		// console.log(new Date());
+
+		// document.getElementById("demo"),innerHTML = text;
+
+
+
+		// var info = {
+		// 	name: 'Juntao',
+		// 	location: {
+		// 		location: 'Wellington',
+		// 		home: 'Unknown',
+		// 		number: 'Unknown',
+		// 	},
+		// 	dob: {
+		// 		dob: 'Unknown',
+		// 		birthPlace: 'Unknown',
+		// 	},
+		// };
+		// 	console.log(info);
+
+
+
+		// $( ".col-sm-6 " ).click(function(){
+		// $(this).hide()
+		// 		.hide(1000)
+		// 		.show(1000)
+		// 		.hide(1000)
+		// 		.show(1000)
+		// });
+
+		// function myFunction(){
+		// var color = ['Yellow', 'Green', 'Blue', 'Red']
+		// 	color.push('Orange', 'Pink');
+		// 	console.log(color);
+		// }
+		// myFunction();
+
+
+
+		// var o = {
+		// 	a: 14,
+		// 	b: 54,
+		// 	c: 66,
+		// 	d: 113,
+		// 	e: 974
+		// };
+
+		// function myFunction(width, height){
+		// var number = width * height;
+		// 	return number;
+		// }
+		// var newWall = myFunction(o.e, o.d);
+		// var newWall2 = myFunction(o.a, o.e);
+
+		// 	console.log(myFunction(o.a, o.e));
+		// 	console.log(myFunction(o.e, o.d));
+
+
+
+		// (function(){ 
+		// 	function myFunction(){
+		// 		var configObj = {
+		// 			option1: 123,
+		// 			option2: 456
+		// 		};
+
+		// 		console.log('a');
+		// 		return configObj.option1;
+		// 	}
+				
+		// 	function myFunction2(){
+		// 		var configObj2 = {
+		// 			option3: 789,
+		// 			option4: 147
+		// 		};
+
+		// 		console.log('b');
+		// 		return configObj2.option4;
+		// 	}
+
+		// 	console.log(myFunction());
+		// 	console.log(myFunction2());
+		// })();
+
+
+			//Integrate logical && ||
+			var check1, check2, check3, check4;
+				check1 = 100;
+				check2 = 500;
+				check3 = 400;
+				check4 = 'check1' + 'check3';
+
+			if ((check4 == check1, check3) || (check1 < check3)) {
+				alert('THIS SITE IS NOT SAFE!!!');
+				}
+			else {
+				alert('YOU ARE NOT SAFE HERE!!!');
+				
+			} //Intergrate logical ends
+
+	});
+
+	function music() {
+
+			//My variables
+			var text;
+			var feeling = $('#songs').val();
+			var check1, check2, check3, check4;
+				check1 = 100;
+				check2 = 500;
+				check3 = 400;
+				check4 = 'check1' + 'check3';
+
+			//**Test Switch statment
+			switch(feeling) {
+				case "N.E.R.D":
+					text = "Seeing Sounds";
+					break;
+				case "Justin Timberlake":
+					text = "Justified";
+					break;
+				case "Rick James":
+					text = "Street Songs";
+					break;
+				case "The Neptunes":
+					text = "The Clones";
+					break;
+				case "Lionel Richie":
+					text = "My Endless Love";
+					break;
+				case "Brockhampton":
+					text = "SATURATION";
+					text = "SATURATION 2";
+					text = "SATURATION 3";
+					break;
+				default:
+					text = "In Search Of...";
+			//**Switch statement ends
+			
+				// If/Else/If Else 
+				if (check4 == check1, check3) {
+					text = "Undefined Search";
+					}
+				else {
+					text = "In Search Of...";
+				}
+
+
+			}
+
+
+		document.getElementById("daAlbums").innerHTML = text;
+
+	} // music ends
+
+
+
+</script>
+</body>
+</html>
